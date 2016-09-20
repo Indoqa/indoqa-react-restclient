@@ -42,14 +42,10 @@ const addDefaults = (options, credentialsProperty) => {
   return options
 }
 
-export const fetchSearch = (url, options) => {
-  return fetch(
-    prefixUrl(url, 'searchProxyUrl', '/search'),
-    addDefaults(options, 'searchProxyCredentials')).then(handleRestResponse)
-}
+export default (url, proxyOptions, requestOptions) => {
+  const {defaultPrefix, urlProperty, credentialsProperty} = proxyOptions
 
-export const fetchContentProvider = (url, options) => {
   return fetch(
-    prefixUrl(url, 'contentProviderProxyUrl', '/content'),
-    addDefaults(options, 'contentProviderCredentials')).then(handleRestResponse)
+    prefixUrl(url, urlProperty, defaultPrefix),
+    addDefaults(requestOptions, credentialsProperty)).then(handleRestResponse)
 }

@@ -1,2 +1,3 @@
-export const fetchApis = require('./fetchApis')
-export const handleRestResponse = require('./handleRestResponse')
+import fetchApi from './fetchApi'
+
+export default fetchApi
