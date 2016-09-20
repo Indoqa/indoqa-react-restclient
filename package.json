@@ -1,0 +1,34 @@
+{
+  "name": "indoqa-react-restclient",
+  "version": "0.1.0",
+  "main": "./dist/IndoqaReactRestclient.min.js",
+  "scripts": {
+    "start": "node ./src/dev/server.js",
+    "dist": "indoqa-webpack ./indoqa-webpack-options.js",
+    "prepublish": "npm run dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Indoqa/indoqa-react-restclient.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "rest",
+    "api",
+    "client"
+  ],
+  "author": "Indoqa Software Design und Beratung GmbH (https://www.indoqa.com)",
+  "license": " Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Indoqa/indoqa-react-restclient/issues"
+  },
+  "homepage": "https://github.com/Indoqa/indoqa-react-restclient#readme",
+  "dependencies": {
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "indoqa-webpack": "^0.6.5"
+  }
+}
