@@ -1,6 +1,6 @@
 {
   "name": "indoqa-react-restclient",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./dist/IndoqaReactRestclient.min.js",
   "scripts": {
     "start": "node ./src/dev/server.js",
@@ -20,7 +20,7 @@
     "client"
   ],
   "author": "Indoqa Software Design und Beratung GmbH (https://www.indoqa.com)",
-  "license": " Apache-2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Indoqa/indoqa-react-restclient/issues"
   },

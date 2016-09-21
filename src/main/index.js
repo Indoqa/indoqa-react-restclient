@@ -1,3 +1,3 @@
-import fetchApi from './fetchApi'
+import interalFetchApi from './fetchApi'
 
-export default fetchApi
+export default interalFetchApi

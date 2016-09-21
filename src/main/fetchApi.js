@@ -47,5 +47,6 @@ export default (url, proxyOptions, requestOptions) => {
 
   return fetch(
     prefixUrl(url, urlProperty, defaultPrefix),
-    addDefaults(requestOptions, credentialsProperty)).then(handleRestResponse)
+    addDefaults(requestOptions, credentialsProperty))
+  .then(handleRestResponse)
 }
