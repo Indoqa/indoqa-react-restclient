@@ -1,2 +1,2 @@
-# indoqa-react-restclient
-A simple fetch abstractions of REST APIs calls in react. 
+# Indoqa React Restclient
+A simple abstraction of REST APIs calls using fetch in react. Adds common defaults and proxy URL handling.
