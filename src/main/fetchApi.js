@@ -3,6 +3,10 @@ import handleRestResponse from './handleRestResponse'
 const prefixUrl = (url, property, defaultPrefix) => {
   const environmentProperty = window[property]
 
+  if (environmentProperty === '') {
+    return url
+  }
+
   if (!environmentProperty) {
     return `${defaultPrefix}${url}`
   }
