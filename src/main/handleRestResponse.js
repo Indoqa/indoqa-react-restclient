@@ -7,5 +7,10 @@ export default (response) => {
     return null
   }
 
-  return response.json()
+  const contentType = response.headers.get('content-type')
+  if (contentType && contentType.indexOf('application/json') !== -1) {
+    return response.json()
+  }
+
+  return response
 }
